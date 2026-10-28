@@ -1,0 +1,11 @@
+{
+  "name": "personal-finance",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "mobile": "npm --prefix mobile start",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix server run build && npm --prefix mobile run typecheck",
+    "setup": "npm --prefix server install && npm --prefix server run db:setup && npm --prefix mobile install"
+  }
+}
